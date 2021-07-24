@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import time
-from datetime import date
+import datetime
 class CovidUpdateGetter:
 	def __init__(self,url):
 		self.url = url
@@ -21,7 +21,7 @@ class CovidUpdateGetter:
 
 		return total_cases,total_deaths,total_recovered
 	def get_the_last_day(self):
-		latest_news_div_name = "newsdate"+str(date.today())
+		latest_news_div_name = "newsdate"+str(datetime.date.today() - datetime.timedelta(days=1)) 
 		latest_news = self.soup.find_all('div',class_=str('row'))
 		news_new_main_div = latest_news[10]
 		main_div = news_new_main_div.find('div',id=latest_news_div_name)
