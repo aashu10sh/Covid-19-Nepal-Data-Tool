@@ -9,8 +9,8 @@ class CovidUpdateGetter:
     def __init__(self, url):
         self.url = url
         self.source = requests.get(self.url).text
-        print('Nepal Covid 19 Update Tool')
-        print('Fetching Data From The Server, Please wait a moment..')
+        print('Nepal Covid 19 Update Tool:')
+        print('All Data: ')
         time.sleep(4)
 
     def get_value_from_html(self):
