@@ -3,6 +3,7 @@ import requests
 import time
 import datetime
 from datetime import date
+import lxml
 
 
 class CovidUpdateGetter:
@@ -11,7 +12,6 @@ class CovidUpdateGetter:
         self.source = requests.get(self.url).text
         print('Nepal Covid 19 Update Tool:')
         print('All Data: ')
-        time.sleep(4)
 
     def get_value_from_html(self):
         self.soup = BeautifulSoup(self.source, 'lxml')
@@ -55,5 +55,6 @@ class CovidUpdateGetter:
 
 if __name__ == "__main__":
     worldmeter = CovidUpdateGetter(
-        'https://www.worldometers.info/coronavirus/country/nepal')
+        'https://www.worldometers.info/coronavirus/country/Nepal')
     worldmeter.main()
+
