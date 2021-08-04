@@ -8,6 +8,11 @@
 ## To Run
 Install all requirements using pip  
 
+
+```
+python3 -m php install -r requirements.txt
+```
+
 ```
 pip3 install bs4 lxml
 ```  
