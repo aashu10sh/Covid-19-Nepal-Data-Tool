@@ -57,4 +57,3 @@ if __name__ == "__main__":
     worldmeter = CovidUpdateGetter(
         'https://www.worldometers.info/coronavirus/country/Nepal')
     worldmeter.main()
-

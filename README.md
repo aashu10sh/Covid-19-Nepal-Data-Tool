@@ -9,11 +9,11 @@
 Install all requirements using pip  
 
 
-```
+``` bash
 python3 -m php install -r requirements.txt
 ```
 
-```
+```bash
 pip3 install bs4 lxml
 ```  
 
@@ -21,4 +21,6 @@ and
 
 Run with  
 
-`python3 scraper.py`
+```bash
+python3 scraper.py
+```
